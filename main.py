@@ -3,6 +3,6 @@ app = Flask('app', template_folder = "templates", static_folder = "gen_data")
 
 @app.route('/')
 def characterio():
-  return 'Hello, World!'
+  return render_template('index.html')
 
 app.run(host='0.0.0.0', port=8080)
