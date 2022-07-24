@@ -20,12 +20,20 @@
         font-family: arial;
       }
     </style>
+    <script language = "javascript">
+      document.addEventListener('keyup', function(e){
+      if(e.keyCode == 32)
+        window.location.reload();
+      })
+    </script>
   </head>
   <body bgcolor = "#3c3c96">
     <div class = "main-block">
       <center><h1>Character.io</h1>
-      <p>Generate a random set of characters or avatars with the power of GANs. Press spacebar to generate a new set.</p></center>
+      <p>Generate a random set of characters or avatars with the power of GANs. Press spacebar to generate a new set.</p>
       <br>
+      <img src = "gen_data/{{data}}.png">
+      </center>
     </div>
   </body>
 </html>
